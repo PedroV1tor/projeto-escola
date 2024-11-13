@@ -1,0 +1,47 @@
+GET http://localhost:3040/professores
+
+###
+
+POST http://localhost:3040/disciplinas
+Content-Type: application/json
+
+{
+    "nome": "portugues",
+    "descricao":"Professor bom"
+}
+
+###
+
+POST http://localhost:3040/professor/adicionar
+Content-Type: application/json
+
+{
+    "nome": "aatias",
+     "email":"profhistoria@gmail.com",
+    "especialidade":"historia"
+   
+}
+
+###
+
+POST http://localhost:3030/salas/adicionar
+Content-Type: application/json
+
+{
+    "nome": "sala 2",
+    "capacidade":"32",
+    "localizacao":"patio2"
+}
+
+###
+
+POST http://localhost:3030/turmas/adicionar
+Content-Type: application/json
+
+{
+    "nome": "turma 1",
+    "periodo":"2",
+    "professorId":"1",
+    "disciplinaId":"2",
+    "salaId":"1"
+}
